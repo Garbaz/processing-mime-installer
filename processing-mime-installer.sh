@@ -9,6 +9,8 @@ xmlfile='<?xml version="1.0" encoding="utf-8"?>
         <glob pattern="*.pde"/>
     </mime-type>
 </mime-info>'
+
 mkdir -p "$mimepath/packages"
 printf "$xmlfile\n" > "$mimepath/packages/processing.xml"
+
 update-mime-database "$mimepath"
