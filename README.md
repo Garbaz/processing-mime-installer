@@ -1,4 +1,4 @@
-# processing-mime-installer
+# Processing Mime Installer
 
 A simple little shell script to "install" the \*.pde files of Processing as their own mime type. This way it is possible to set Processing as the default program for them without influencing any other file types.
 
