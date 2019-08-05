@@ -1,3 +1,6 @@
+mimepath='~/.local/share/mime'
+#mimepath='/usr/share/mime'
+
 xmlfile='<?xml version="1.0" encoding="utf-8"?>
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
     <mime-type type="text/x-processing">
@@ -6,6 +9,6 @@ xmlfile='<?xml version="1.0" encoding="utf-8"?>
         <glob pattern="*.pde"/>
     </mime-type>
 </mime-info>'
-mkdir -p ~/.local/share/mime/packages
-printf "$xmlfile\n" > ~/.local/share/mime/packages/processing.xml
-update-mime-database ~/.local/share/mime
+mkdir -p "$mimepath/packages"
+printf "$xmlfile\n" > "$mimepath/packages/processing.xml"
+update-mime-database "$mimepath"
